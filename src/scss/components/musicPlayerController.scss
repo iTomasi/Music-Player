@@ -1,0 +1,97 @@
+.iw_musicPlayerController {
+    color: #f9f9f9;
+    text-align: center;
+    padding: 0 10px;
+
+    .iw_title {
+        margin-bottom: 20px;
+        h2 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 17px;
+            color: #ccc;
+        }
+    }
+
+    .iw_controller {
+        .iw_bar {
+            background: #282839;
+            height: 7px;
+            border-radius: 1000px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            width: 100%;
+
+            .iw_progress {
+                background: linear-gradient(
+                    90deg,
+                    rgba(47, 44, 61, 1) 0%,
+                    rgba(148, 103, 114, 1) 82%
+                );
+                border-radius: 1000px;
+                width: 50%;
+                height: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .iw_circle {
+                    background: rgb(148, 103, 114);
+                    height: 17px;
+                    width: 17px;
+                    position: absolute;
+                    right: -10px;
+                    border-radius: 1000px;
+                }
+
+                .iw_circle:hover {
+                    transform: scale(1.13);
+                }
+            }
+        }
+
+        .iw_buttons {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+
+            .iw_play {
+                background: linear-gradient(
+                    22deg,
+                    rgba(198, 130, 132, 1) 0%,
+                    rgba(127, 82, 88, 1) 100%
+                );
+                height: 45px;
+                width: 45px;
+                border-radius: 1000px;
+                border: none;
+                outline: none;
+                color: #f9f9f9;
+                cursor: pointer;
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 0px 7px 0px rgba(192, 130, 132, 0.75);
+            }
+        }
+
+        .iw_volume {
+            display: flex;
+            align-items: center;
+            margin: auto;
+
+            .iw_icon {
+                width: 30%;
+            }
+
+            .iw_volumeBar {
+                width: 60%;
+                height: 7px;
+            }
+        }
+    }
+}
