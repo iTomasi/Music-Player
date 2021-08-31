@@ -12,3 +12,19 @@
 body {
     background: #282330;
 }
+
+.iw_header {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background: #1f2833;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+        color: #f9f9f9;
+        font-size: 20px;
+    }
+}

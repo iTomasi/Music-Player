@@ -4,7 +4,7 @@ import Link from "next/link";
 const App = ({ Component, pageProps }) => {
     return (
         <>
-            <header>
+            <header className="iw_header">
                 <Link href="/">
                     <a>Home</a>
                 </Link>
