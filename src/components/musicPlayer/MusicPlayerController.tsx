@@ -59,6 +59,8 @@ const MusicPlayerController = ({
     }, [volumenPercentage]);
 
     const handlePlayBtn = () => {
+        const theWindow: any = window;
+        theWindow.plausible("PlayMusic");
         if (audio.current.paused) {
             audio.current.play();
         } else audio.current.pause();
